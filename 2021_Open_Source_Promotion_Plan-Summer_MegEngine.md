@@ -66,7 +66,7 @@ MegEngine 官网：https://megengine.org.cn/
 2. 项目描述：在 web 上跑起来简单的 mge 模型
 3. 项目难度：高
 4. 项目社区导师：柳俊杰
-5. 导师联系方式：liujinjie@megvii.com
+5. 导师联系方式：liujunjie@megvii.com
 6. 项目产出要求：
 
    在 web 上跑起来线性回归模型/手写字模型，要求提供 mge.js 和可运行的 model。
@@ -109,7 +109,7 @@ MegEngine 官网：https://megengine.org.cn/
 2. 项目描述：在 web 上提交 mge 模型，后端执行并反馈 profile 细节
 3. 项目难度：高
 4. 项目社区导师：柳俊杰
-5. 导师联系方式：liujinjie@megvii.com
+5. 导师联系方式：liujunjie@megvii.com
 6. 项目产出要求：
 	
 	一个对用户友好的 web profile 工具 C/S 结构，前端负责收集模型、可视化、打印 profile 结果。后端负责实际跑模型，后端的支持可以覆盖 x86/cuda/arm 等。
