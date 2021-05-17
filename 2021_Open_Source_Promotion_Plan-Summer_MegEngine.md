@@ -177,8 +177,8 @@ MegEngine 官网：https://megengine.org.cn/
 1. 项目标题：python whl 支持 Android (限定在主流的ARM吧)
 2. 项目描述：在 Android arm 上，可用 megengine python
 3. 项目难度：高
-4. 项目社区导师：张浩龙
-5. 导师联系方式：zhanghaolong@megvii.com
+4. 项目社区导师：王博文
+5. 导师联系方式：wangbowen02@megvii.com
 6. 项目产出要求：
 
 	在 Android aarch64 上(termux 环境)，可用 MegEngine python
