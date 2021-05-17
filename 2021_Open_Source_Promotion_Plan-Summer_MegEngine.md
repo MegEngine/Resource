@@ -114,10 +114,15 @@ MegEngine 官网：https://megengine.org.cn/
 	
 	一个对用户友好的 web profile 工具 C/S 结构，前端负责收集模型、可视化、打印 profile 结果。后端负责实际跑模型，后端的支持可以覆盖 x86/cuda/arm 等。
 	
-	- L0: 前端能提交 mge 模型，打印模型的执行延迟。后端支持 X86，能接受前端的模型并反馈延迟结果，后端的执行可以包装 load_and_run。
-	- L1: 前端支持打印 profile 结果，后端反馈 profile 结果。后端的 profile 可以直接返回load_and_run的profile json结果，并提供过滤、排序、聚合等操作
-	- L2: 前端支持模型结构预览，并可视化每层的耗时
+	- L0: 前端能提交 mge 模型，打印模型的执行延迟。后端支持X86，能接受前端的模型并反馈延迟结果。后端的执行可以包装l oad_and_run（需要能填充模型的输入数据，加载完模型后打印模型的输入输出 tensor）。
+
+	- L1: 前端支持打印 profile 结果，后端反馈 profile 结果。后端的 profile 可以直接返回 load_and_run的profile json 结果，并提供过滤、排序、聚合等操作。反馈模型的输出 tensor name。
+
+	- L2: 前端支持模型结构预览(加载完模型后即可预览)，并可视化每层的耗时（profile 后可以看到耗时）
+
 	- L3: 扩展后端范围，包括 cuda/arm。方便没有设备的用户能直接得到性能数据。
+
+	- L4: 支持 megengine 的版本切换，支持上传 np 文件作为输入
 
 7. 项目技术要求：html/js/c++/python
 
