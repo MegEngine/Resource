@@ -23,9 +23,9 @@ def softmax(logits):
     return exp / exp.sum(-1, keepdims=True)
 
 
-model = MLPMixer(num_blocks=12, embed_dim=768)
+model = mlp_mixer_b16_224(pretrained=True)
 torch_model = timm.models.mlp_mixer.mixer_b16_224(pretrained=True)
-model.load_from_torch(torch_model.state_dict())
+# model.load_from_torch(torch_model.state_dict())
 
 data = np.stack([read_image(path) for path in glob('data/*.jpg')])
 print(f'input shape {data.shape} max {data.max()} min {data.min()}')

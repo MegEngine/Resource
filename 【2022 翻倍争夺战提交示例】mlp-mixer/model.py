@@ -88,3 +88,9 @@ class MLPMixer(M.Module):
         sd = {k: v.numpy() for k, v in torch_state_dict.items()}
         sd['stem.proj.bias'] = sd['stem.proj.bias'].reshape(1, -1, 1, 1)
         self.load_state_dict(sd)
+
+
+# 请将下面的 URL 替换为提交权重文件后得到的 URL
+@mge.hub.pretrained('http://localhost:8000/mlp_mixer_b16_224.pkl')
+def mlp_mixer_b16_224():
+    return MLPMixer(num_blocks=12, embed_dim=768)
