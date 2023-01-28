@@ -28,6 +28,7 @@ Awesome MegEngineer 是 MegEngine 社区颁发给社区优秀贡献者的一项�
 + 在媒体/自媒体平台公开发布 1 篇 MegEngine 相关原创文章；
 + 主讲 1 场有关 MegEngine 的线上/线下技术分享；
 + 组织过 1 场当地/学校的线下 20 人以上的技术活动；
+
 **活动详情见：[官网](https://www.megengine.org.cn/community-AMGE)**
 
 
